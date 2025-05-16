@@ -25,6 +25,15 @@ architecture Behavioral of LED is
         );
     end component;
     
+    component ila_0 is
+        port (
+            clk : in std_logic;
+            probe0 : in std_logic_vector(0 downto 0);
+            probe1 : in std_logic_vector(0 downto 0);
+            probe2 : in std_logic_vector(0 downto 0)
+        );
+    end component;
+    
     signal switch : std_logic := '0';
     signal tick_s : std_logic;
 
@@ -35,6 +44,13 @@ architecture Behavioral of LED is
             rst => rst,
             clk => clk,
             tick => tick_s
+        );
+        
+        inst_scope: ila_0 port map (
+            clk => clk,
+            probe0(0) => enable,
+            probe1(0) => rst,
+            probe2(0) => switch        
         );
 
         process (clk)
