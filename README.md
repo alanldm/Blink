@@ -100,7 +100,7 @@ After finishing your development, you’ll generate your TCL script — just lik
 
 A window will pop up allowing you to choose the directory where you’d like to save the TCL script.
 
-![Save TCL](.\.github\img\Directory.png)
+![Save TCL](.github/img/Directory.png)
 
 I recommend choosing the **root of your project** — that is, the directory where folders like `.gitignore`, `project.srcs`, and others are located.
 
@@ -144,7 +144,7 @@ git clone URL
 
 Once the repository is cloned, open **Vivado**. Click on *Run Tcl Script*, locate your `.tcl` file, and… watch the magic happen ✨ 
 
-![Run TCL Script](.\.github\img\Run.png)
+![Run TCL Script](.github/img/Run.png)
 
 If you run into an issue that requires re-running the TCL script, you might see an error like:
 
