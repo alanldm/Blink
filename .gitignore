@@ -7,3 +7,9 @@ Blink.sim/
 
 #Auto-generated files
 Blink.xpr
+
+#Files
+Blink.srcs/sources_1/ip/ila_0/*
+!Blink.srcs/sources_1/ip/ila_0/*.xml
+!Blink.srcs/sources_1/ip/ila_0/*.xci
+
