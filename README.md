@@ -96,7 +96,7 @@ That’s exactly why we version only the essential files: to make regeneration f
 
 After finishing your development, you’ll generate your TCL script — just like shown in the image below:
 
-![Generate TCL](./.github\img\TCL.png)
+![Generate TCL](.github/img/TCL.png)
 
 A window will pop up allowing you to choose the directory where you’d like to save the TCL script.
 
