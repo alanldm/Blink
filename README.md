@@ -7,7 +7,7 @@ Unfortunately, FPGA development environments aren't exactly user-friendly. It's 
 
 **What if I told you *Git* doesn’t need to track all those files?** You can version only the essential source files—and that’s enough to automatically rebuild your entire project on another machine.
 
-## 🛠️ Setting up Your Project
+## 🔧 Setting up Your Project
 Let's start with the basics: creating you project ! For this tutorial, I’ll be using the Vivado IDE from Xilinx (now AMD), but you can likely follow similar steps in Quartus from Intel (formerly Altera).
 
 First, open your IDE and click on Create Project. Go through the setup steps, choosing a suitable name and directory for your project. Avoid using spaces or special characters in project names or folder paths—they can cause issues later on.
@@ -87,7 +87,7 @@ Blink.srcs/
 ```
 > ⚠️ **Attention:** Sometimes IP cores may contain a lot of ignorable files. The only two necessary files are those with the extensions **`.xml`** and **`.xci`**. To see how to keep only these files, refer to the `.gitignore` example above.
 
-## 💻 Generating TCL Script
+## 📃 Generating TCL Script
 Sometimes during development, we need to work across different machines, and manually recreating and reconfiguring everything from scratch can be very unproductive.
 
 That’s where TCL scripts come in — they play a key role in automating the project setup. With a properly written script, you can rebuild your entire Vivado project using only the source files.
