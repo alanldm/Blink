@@ -120,7 +120,7 @@ At first, this looks fine - since "." means the current directory. But be carefu
 To ensure the script runs correctly across different machines, replace the line with:
 
 ```tcl
-set origin [pwd]
+set origin_dir [file dirname [file normalize [info script]]]
 ```
 
 > 🧠 **Remember:** the `.tcl` file must be in the version control as well !
